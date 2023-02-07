@@ -5,17 +5,61 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: small;
 }
 
+.header {
+  display:flex;
+  justify-content: space-between;
+}
+.footer {
+  background-color: lightgray;
+  display: flex; 
+  justify-content: space-between;
+}
+
+.left-links{
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding-left: 20px;
+
+}
+.right-links{
+  list-style-type: none;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding-right: 20px;
+
+
+}
+
+.content{
+  display: flex;
+  flex: 0 0 0;
+  flex-direction: column;
+  margin: auto; 
+  justify-content: center;
+  align-items: center;
+}
 img {
   width: 600px;
 }
 
+}
 button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
   background: #eee;
+  display: flex;
 }
 
 input {
@@ -24,4 +68,9 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+a:link {
+  text-decoration: none;
+  color: gray;
 }
